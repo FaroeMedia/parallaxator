@@ -14,10 +14,10 @@ Usage
 
 ###### example on usage:
 ```html
-	<div class="parralaxator">
-		<img class="parralax_child" src="grid.ong" width="100%">
-		<h1 class="parralax_child" data-parralaxator-reverse="true" data-parralaxator-velocity="0.45">
-			A text
-		</h1>
-	</div>
+<div class="parralaxator">
+	<img class="parralax_child" src="grid.ong" width="100%">
+	<h1 class="parralax_child" data-parralaxator-reverse="true" data-parralaxator-velocity="0.45">
+		A text
+	</h1>
+</div>
 ```
