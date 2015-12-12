@@ -15,41 +15,48 @@
 		.section4,
 		.section5,
 		.section6 {
-			padding: 64px;
+			/*border: 1px solid red;*/
 		}
 		.section1 {
 			background-color: #fed;
-			height: 300px;
+			height: 500px;
 		}
 		.section2 {
 			background-color: #def;
-			height: 400px;
+			height: 600px;
 		}
 		.section3 {
 			background-color: #fde;
-			height: 200px;
+			height: 400px;
 		}
 		.section4 {
 			background-color: #dfe;
-			height: 300px;
+			height: 500px;
 		}
 		.section5 {
 			background-color: #efd;
-			height: 400px;
+			height: 600px;
 		}
 		.section6 {
 			background-color: #edf;
-			height: 600px;
+			height: 1000px;
 		}
 		.mega_text {
 			font-weight: bold;
-			font-size: 200px;
+			font-size: 100px;
+			margin: 0;
+			background-color: rgba(255,255,255,.25);
+			padding: 64px;
+			display: block;
 		}
 		.parralaxator {
 			overflow: hidden;
-		}
-		.parralaxator > * {
 			position: relative;
+		}
+		.parralaxator > .parrachild,
+		.parralaxator > .parrachild_reverse {
+			position: absolute;
+			/*transition: transform 200ms ease-out;*/
 		}
 	</style>
 	<script src="jquery-1.11.3.min.js"></script>
@@ -62,32 +69,35 @@
 </head>
 <body>
 	<div class="section1 parralaxator">
-		<h1 class="mega_text">
+		<h1 class="mega_text parrachild_reverse">
 			This is section 1
 		</h1>
 	</div>
 	<div class="section2 parralaxator">
-		<h1 class="mega_text">
-			This is section 2
+		<h1 class="mega_text parrachild_reverse">
+			This is section 2<br>
+			This is section 2<br>
+			This is section 2<br>
 		</h1>
 	</div>
 	<div class="section3 parralaxator">
-		<h1 class="mega_text">
-			This is section 3
-		</h1>
+		<img class="parrachild" src="http://www.citygop.org/wp-content/uploads/2015/02/o-NEW-YORK-CITY-WRITER-facebook.jpg" width="100%">
+		<!--<img class="parrachild_reverse" src="grid.png" width="100%">-->
 	</div>
 	<div class="section4 parralaxator">
-		<h1 class="mega_text">
+		<h1 class="mega_text parrachild_reverse">
 			This is section 4
 		</h1>
 	</div>
 	<div class="section5 parralaxator">
-		<h1 class="mega_text">
+		<img class="parrachild" src="http://www.freebestwallpapers.info/bulkupload/city/Abstract/New-City-Wallpaper-1.jpg" width="100%">
+		<h1 class="mega_text parrachild_reverse">
 			This is section 5
 		</h1>
+		<!--<img class="parrachild" src="grid.png" width="100%">-->
 	</div>
 	<div class="section6 parralaxator">
-		<h1 class="mega_text">
+		<h1 class="mega_text parrachild_reverse">
 			This is section 6
 		</h1>
 	</div>

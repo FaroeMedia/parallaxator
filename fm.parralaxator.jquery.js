@@ -28,12 +28,47 @@
  */
 
 $(function () {
-	$(window).scroll(function () {
+	var refreshParralaxator = function () {
 		var i = 0;
+		var $window = $(window);
 		$('.parralaxator').each(function () {
+			var holder = this;
 			i++;
-			var $parralax_holder = $(this);
-			console.log(i, $parralax_holder.offset().top());
+			var windowHeight = $window.height();
+			var holderBounding = holder.getBoundingClientRect();
+
+			var topIsWithinWindow = holderBounding.top < windowHeight;
+			var bottomIsWithinWindow = holderBounding.bottom > 0;
+
+			if (topIsWithinWindow && bottomIsWithinWindow) {
+				var $holder = $(holder);
+				$holder.children('.parrachild').each(function () {
+					var child = this;
+					var $child = $(child);
+					var childBounding = child.getBoundingClientRect();
+					var height_difference = holderBounding.height - childBounding.height;
+					var height_calc = windowHeight - holderBounding.height;
+					var top_calc = (holderBounding.top - height_calc) * -1;
+					var multiplier = top_calc / height_calc;
+					$child.css('transform', 'translate3d(0, ' + ((height_difference * (multiplier * -1)) + height_difference) + 'px, 0)');
+				});
+				$holder.children('.parrachild_reverse').each(function () {
+					var child = this;
+					var $child = $(child);
+					var childBounding = child.getBoundingClientRect();
+					var height_difference = holderBounding.height - childBounding.height;
+					var top_calc = (holderBounding.top - windowHeight) * -1;
+					var height_calc = windowHeight + holderBounding.height;
+					var multiplier = top_calc / height_calc;
+					$child.css('transform', 'translate3d(0, ' + (height_difference * multiplier) + 'px, 0)');
+				});
+			}
 		});
+	};
+	$(window).bind('scroll resize load ready', function () {
+		refreshParralaxator();
+	});
+	$('.parralaxator').find('img').load(function () {
+		refreshParralaxator();
 	});
 });
