@@ -1,7 +1,7 @@
 Parralaxator
 =======
 Parralaxator is a jQuery-based parralax plugin. It's simple, and amazingly easy to use.
-[You can see a demo here](http://opensource.faroemedia.com/numbertor).
+[You can see a demo here](http://opensource.faroemedia.com/parralaxator).
 
 
 Usage
