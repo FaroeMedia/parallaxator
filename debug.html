@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Parralaxator Plugin</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.section1,
+		.section2,
+		.section3,
+		.section4,
+		.section5,
+		.section6 {
+			/*border: 1px solid red;*/
+		}
+		.section1 {
+			background-color: #fed;
+			height: 500px;
+		}
+		.section2 {
+			background-color: #def;
+			height: 600px;
+		}
+		.section3 {
+			background-color: #fde;
+			height: 400px;
+		}
+		.section4 {
+			background-color: #dfe;
+			height: 500px;
+		}
+		.section5 {
+			background-color: #efd;
+			height: 600px;
+		}
+		.section6 {
+			background-color: #edf;
+			height: 1000px;
+		}
+		.mega_text {
+			font-weight: bold;
+			font-size: 100px;
+			margin: 0;
+			background-color: rgba(255,255,255,.25);
+			padding: 64px;
+			display: block;
+		}
+		.parralaxator {
+			overflow: hidden;
+			position: relative;
+		}
+		.parralaxator > .parralax_child {
+			position: absolute;
+			top: 0;
+		}
+	</style>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="fm.parralaxator.jquery.js"></script>
+	<script>
+		$(function () {
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="section1 parralaxator">
+		<!--<h1 class="mega_text parralax_child" data-parralaxator-reverse="true">
+			This is section 1
+		</h1>-->
+	</div>
+	<div class="section2 parralaxator">
+		<!--<h1 class="mega_text parralax_child" data-parralaxator-reverse="true">
+			This is section 2<br>
+			This is section 2<br>
+			This is section 2<br>
+		</h1>-->
+	</div>
+	<div class="section3 parralaxator">
+		<!--<img class="parralax_child" src="http://www.citygop.org/wp-content/uploads/2015/02/o-NEW-YORK-CITY-WRITER-facebook.jpg" width="100%">-->
+		<!--<img class="parralax_child" src="grid.png" style="width: 50%;" data-parralaxator-reverse="false">-->
+	</div>
+	<div class="section4 parralaxator">
+		<img class="parralax_child" src="grid.png" data-parralaxator-reverse="true" style="width: 50%; opacity: .5;">
+		<!--<img class="parralax_child" src="grid.png" style="width: 60%; opacity: .5;" data-parralaxator-reverse="true">-->
+		<!--<h1 class="mega_text parralax_child" data-parralaxator-reverse="true" data-parralaxator-velocity="2">
+			This is section 4
+		</h1>-->
+	</div>
+	<div class="section5 parralaxator">
+		<!--<img class="parralax_child" src="http://www.freebestwallpapers.info/bulkupload/city/Abstract/New-City-Wallpaper-1.jpg" width="100%">-->
+		<!--<img class="parralax_child" src="grid.png" style="width: 100%;" data-parralaxator-reverse="false">-->
+		<!--<h1 class="mega_text parralax_child" data-parralaxator-reverse="true">
+			This is section 5
+		</h1>-->
+	</div>
+	<div class="section6 parralaxator">
+		<!--<h1 class="mega_text parralax_child" data-parralaxator-reverse="true">
+			This is section 6
+		</h1>-->
+	</div>
+</body>
+</html>

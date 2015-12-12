@@ -15,37 +15,32 @@
 		.section4,
 		.section5,
 		.section6 {
-			/*border: 1px solid red;*/
+			border-bottom: 32px solid #fff;
+			padding-top: 40%;
 		}
 		.section1 {
-			background-color: #fed;
-			height: 500px;
+			background-color: #fdb;
 		}
 		.section2 {
-			background-color: #def;
-			height: 600px;
+			background-color: #bdf;
 		}
 		.section3 {
-			background-color: #fde;
-			height: 400px;
+			background-color: #fbd;
 		}
 		.section4 {
-			background-color: #dfe;
-			height: 500px;
+			background-color: #bfd;
 		}
 		.section5 {
-			background-color: #efd;
-			height: 600px;
+			background-color: #dfb;
 		}
 		.section6 {
-			background-color: #edf;
-			height: 1000px;
+			background-color: #dbf;
 		}
 		.mega_text {
 			font-weight: bold;
 			font-size: 100px;
 			margin: 0;
-			background-color: rgba(255,255,255,.25);
+			text-shadow: 0 10px 100px #fff, 0 0 15px #fff;
 			padding: 64px;
 			display: block;
 		}
@@ -53,10 +48,9 @@
 			overflow: hidden;
 			position: relative;
 		}
-		.parralaxator > .parrachild,
-		.parralaxator > .parrachild_reverse {
+		.parralaxator > .parralax_child {
 			position: absolute;
-			/*transition: transform 200ms ease-out;*/
+			top: 0;
 		}
 	</style>
 	<script src="jquery-1.11.3.min.js"></script>
@@ -69,35 +63,40 @@
 </head>
 <body>
 	<div class="section1 parralaxator">
-		<h1 class="mega_text parrachild_reverse">
+		<img class="parralax_child" src="http://m.img.brothersoft.com/android/b6/b608a42e75bee40125a7c43b56dedc82_screeshots_2.jpeg" width="100%">
+		<h1 class="mega_text parralax_child">
 			This is section 1
 		</h1>
 	</div>
 	<div class="section2 parralaxator">
-		<h1 class="mega_text parrachild_reverse">
+		<img class="parralax_child" src="https://romaniadacia.files.wordpress.com/2012/07/tisitei-romania-beautiful-natural-landscapes-romanians-eastern-europeans-mountains-river-europe-rumania-wild-rumc3a4nen-rumc3a4nischen-natural-reservation.jpg" width="100%">
+		<h1 class="mega_text parralax_child">
 			This is section 2<br>
 			This is section 2<br>
 			This is section 2<br>
 		</h1>
 	</div>
 	<div class="section3 parralaxator">
-		<img class="parrachild" src="http://www.citygop.org/wp-content/uploads/2015/02/o-NEW-YORK-CITY-WRITER-facebook.jpg" width="100%">
-		<!--<img class="parrachild_reverse" src="grid.png" width="100%">-->
+		<img class="parralax_child" src="https://romaniadacia.files.wordpress.com/2012/10/blue-lake-maramures-romania-landscape-forests-beautiful-natural-landscape.jpg" width="100%">
+		<h1 class="mega_text parralax_child" data-parralaxator-reverse="true" data-parralaxator-velocity="0.35">
+			This is section 3
+		</h1>
 	</div>
 	<div class="section4 parralaxator">
-		<h1 class="mega_text parrachild_reverse">
+		<img class="parralax_child" src="http://www.citygop.org/wp-content/uploads/2015/02/o-NEW-YORK-CITY-WRITER-facebook.jpg" width="100%">
+		<h1 class="mega_text parralax_child" data-parralaxator-velocity="0.25">
 			This is section 4
 		</h1>
 	</div>
 	<div class="section5 parralaxator">
-		<img class="parrachild" src="http://www.freebestwallpapers.info/bulkupload/city/Abstract/New-City-Wallpaper-1.jpg" width="100%">
-		<h1 class="mega_text parrachild_reverse">
+		<img class="parralax_child" src="http://www.freebestwallpapers.info/bulkupload/city/Abstract/New-City-Wallpaper-1.jpg" width="100%">
+		<h1 class="mega_text parralax_child">
 			This is section 5
 		</h1>
-		<!--<img class="parrachild" src="grid.png" width="100%">-->
 	</div>
 	<div class="section6 parralaxator">
-		<h1 class="mega_text parrachild_reverse">
+		<img class="parralax_child" src="https://romaniadacia.files.wordpress.com/2012/11/secuiului-rock-limestone-massif-carpathian-mountains-romania-pictures-photos-beautiful-natural-landscape.jpg" width="100%">
+		<h1 class="mega_text parralax_child">
 			This is section 6
 		</h1>
 	</div>
