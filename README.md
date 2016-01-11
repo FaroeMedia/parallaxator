@@ -8,6 +8,7 @@ Usage
 -----
 ###### include in head:
 ```html
+<link rel="stylesheet" href="fm.parallaxator.jquery.css">
 <script src="jquery-1.11.3.min.js"></script>
 <script src="fm.parallaxator.jquery.js"></script>
 ```
