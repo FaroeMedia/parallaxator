@@ -15,7 +15,7 @@ Usage
 ###### example on usage:
 ```html
 <div class="parallaxator">
-	<img class="parallax_child" src="grid.ong" width="100%">
+	<img class="parallax_child" src="grid.png" width="100%">
 	<h1 class="parallax_child" data-parallaxator-reverse="true" data-parallaxator-velocity="0.45">
 		A text
 	</h1>
