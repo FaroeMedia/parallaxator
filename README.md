@@ -1,7 +1,7 @@
 Parallaxator
 =======
 Parallaxator is a jQuery-based parallax plugin. It's simple, and amazingly easy to use.
-[You can see a demo here](http://opensource.faroemedia.com/parallaxator).
+[You can see a demo here](http://opensource.qodio.com/parallaxator).
 
 
 Usage
