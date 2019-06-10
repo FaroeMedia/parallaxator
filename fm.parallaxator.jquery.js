@@ -2,7 +2,7 @@
  Parallaxator jQuery Plugin
  Parallaxator is a jQuery-based parallax plugin. It's simple, and amazingly easy to use.
  version 1.0, Dec 11th, 2015
- by Ingi P. Jacobsen
+ by Ingi á Steinamørk
 
  The MIT License (MIT)
 
