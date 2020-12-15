@@ -1,3 +1,6 @@
+DEPRECATED - no longer actively maintained
+==========================================
+
 Parallaxator
 =======
 Parallaxator is a jQuery-based parallax plugin. It's simple, and amazingly easy to use.
